@@ -1,0 +1,1260 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="mmdetection">
+      
+      
+        <meta name="author" content="Ean Yang">
+      
+      
+        <link rel="canonical" href="https://eanyang7.github.io/mmdetection/notes/faq/">
+      
+      
+        <link rel="prev" href="../compatibility/">
+      
+      
+        <link rel="next" href="../projects/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.jpg">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.14">
+    
+    
+      
+        <title>常见问题解答 - mmdetection 文档教程</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.fad675c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="deep-purple">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="mmdetection 文档教程" class="md-header__button md-logo" aria-label="mmdetection 文档教程" data-md-component="logo">
+      
+  <img src="../../assets/logo.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            mmdetection 文档教程
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              常见问题解答
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="deep-purple"  aria-label="切换为暗黑模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换为暗黑模式" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="red"  aria-label="切换为浅色模式"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="切换为浅色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/EanYang7/mmdetection" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    github仓库
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="mmdetection 文档教程" class="md-nav__button md-logo" aria-label="mmdetection 文档教程" data-md-component="logo">
+      
+  <img src="../../assets/logo.jpg" alt="logo">
+
+    </a>
+    mmdetection 文档教程
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/EanYang7/mmdetection" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    github仓库
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../article/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Article
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../get_started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    开始你的第一步
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model_zoo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    模型库
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    概述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../advanced_guides/conventions/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Advanced guides
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../migration/api_and_registry_migration/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Migration
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Notes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Notes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../compatibility/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MMDetection v2.x 兼容性说明
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    常见问题解答
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    常见问题解答
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pytorch-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      PyTorch 2.0 支持
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      代码
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pytorchcuda" class="md-nav__link">
+    <span class="md-ellipsis">
+      PyTorch/CUDA 环境相关
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#training" class="md-nav__link">
+    <span class="md-ellipsis">
+      Training 相关
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evaluation 相关
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model 相关
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../projects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基于 MMDetection 的项目
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../user_guides/config/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    User guides
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pytorch-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      PyTorch 2.0 支持
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      代码
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pytorchcuda" class="md-nav__link">
+    <span class="md-ellipsis">
+      PyTorch/CUDA 环境相关
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#training" class="md-nav__link">
+    <span class="md-ellipsis">
+      Training 相关
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evaluation 相关
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model 相关
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/EanYang7/mmdetection/tree/main/docs/notes/faq.md" title="编辑此页" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/EanYang7/mmdetection/tree/main/docs/notes/faq.md" title="查看本页的源代码" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"/></svg>
+    </a>
+  
+
+
+<h1 id="_1">常见问题解答<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
+<p>我们在这里列出了使用时的一些常见问题及其相应的解决方案。 如果您发现有一些问题被遗漏，请随时提 PR 丰富这个列表。 如果您无法在此获得帮助，请使用 <a href="https://github.com/open-mmlab/mmdetection/blob/main/.github/ISSUE_TEMPLATE/error-report.md/">issue模板</a>创建问题，但是请在模板中填写所有必填信息，这有助于我们更快定位问题。</p>
+<h2 id="pytorch-20">PyTorch 2.0 支持<a class="headerlink" href="#pytorch-20" title="Permanent link">⚓︎</a></h2>
+<p>MMDetection 目前绝大部分算法已经支持了 PyTorch 2.0 及其 <code>torch.compile</code> 功能, 用户只需要安装 MMDetection 3.0.0rc7 及其以上版本即可。如果你在使用中发现有不支持的算法，欢迎给我们反馈。我们也非常欢迎社区贡献者来 benchmark 对比 <code>torch.compile</code> 功能所带来的速度提升。</p>
+<p>如果你想启动 <code>torch.compile</code> 功能，只需要在 <code>train.py</code> 或者 <code>test.py</code> 后面加上 <code>--cfg-options compile=True</code>。 以 RTMDet 为例，你可以使用以下命令启动 <code>torch.compile</code> 功能：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 单卡</span>
+python<span class="w"> </span>tools/train.py<span class="w"> </span>configs/rtmdet/rtmdet_s_8xb32-300e_coco.py<span class="w">  </span>--cfg-options<span class="w"> </span><span class="nv">compile</span><span class="o">=</span>True
+
+<span class="c1"># 单机 8 卡</span>
+./tools/dist_train.sh<span class="w"> </span>configs/rtmdet/rtmdet_s_8xb32-300e_coco.py<span class="w"> </span><span class="m">8</span><span class="w"> </span>--cfg-options<span class="w"> </span><span class="nv">compile</span><span class="o">=</span>True
+
+<span class="c1"># 单机 8 卡 + AMP 混合精度训练</span>
+./tools/dist_train.sh<span class="w"> </span>configs/rtmdet/rtmdet_s_8xb32-300e_coco.py<span class="w"> </span><span class="m">8</span><span class="w"> </span>--cfg-options<span class="w"> </span><span class="nv">compile</span><span class="o">=</span>True<span class="w"> </span>--amp
+</code></pre></div>
+<p>需要特别注意的是，PyTorch 2.0 对于动态 shape 支持不是非常完善，目标检测算法中大部分不仅输入 shape 是动态的，而且 loss 计算和后处理过程中也是动态的，这会导致在开启 <code>torch.compile</code> 功能后训练速度会变慢。基于此，如果你想启动 <code>torch.compile</code> 功能，则应该遵循如下原则：</p>
+<ol>
+<li>输入到网络的图片是固定 shape 的，而非多尺度的</li>
+<li>设置 <code>torch._dynamo.config.cache_size_limit</code> 参数。TorchDynamo 会将 Python 字节码转换并缓存，已编译的函数会被存入缓存中。当下一次检查发现需要重新编译时，该函数会被重新编译并缓存。但是如果重编译次数超过预设的最大值（64），则该函数将不再被缓存或重新编译。前面说过目标检测算法中的 loss 计算和后处理部分也是动态计算的，这些函数需要在每次迭代中重新编译。因此将 <code>torch._dynamo.config.cache_size_limit</code> 参数设置得更小一些可以有效减少编译时间</li>
+</ol>
+<p>在 MMDetection 中可以通过环境变量 <code>DYNAMO_CACHE_SIZE_LIMIT</code> 设置 <code>torch._dynamo.config.cache_size_limit</code> 参数，以 RTMDet 为例，命令如下所示：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 单卡</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">DYNAMO_CACHE_SIZE_LIMIT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span>
+python<span class="w"> </span>tools/train.py<span class="w"> </span>configs/rtmdet/rtmdet_s_8xb32-300e_coco.py<span class="w">  </span>--cfg-options<span class="w"> </span><span class="nv">compile</span><span class="o">=</span>True
+
+<span class="c1"># 单机 8 卡</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">DYNAMO_CACHE_SIZE_LIMIT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span>
+./tools/dist_train.sh<span class="w"> </span>configs/rtmdet/rtmdet_s_8xb32-300e_coco.py<span class="w"> </span><span class="m">8</span><span class="w"> </span>--cfg-options<span class="w"> </span><span class="nv">compile</span><span class="o">=</span>True
+</code></pre></div>
+<p>关于 PyTorch 2.0 的 dynamo 常见问题，可以参考 <a href="https://pytorch.org/docs/stable/dynamo/faq.html">这里</a></p>
+<h2 id="_2">安装<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>MMCV 与 MMDetection 的兼容问题: "ConvWS is already registered in conv layer"; "AssertionError: MMCV==xxx is used but incompatible. Please install mmcv&gt;=xxx, \&lt;=xxx."</li>
+</ul>
+<p>MMDetection，MMEngine 和 MMCV 的版本兼容关系如下。请选择合适的版本避免安装错误 。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">MMDetection 版本</th>
+<th style="text-align: center;">MMCV 版本</th>
+<th style="text-align: center;">MMEngine 版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">main</td>
+<td style="text-align: center;">mmcv&gt;=2.0.0, \&lt;2.2.0</td>
+<td style="text-align: center;">mmengine&gt;=0.7.1, \&lt;1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">3.2.0</td>
+<td style="text-align: center;">mmcv&gt;=2.0.0, \&lt;2.2.0</td>
+<td style="text-align: center;">mmengine&gt;=0.7.1, \&lt;1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">3.1.0</td>
+<td style="text-align: center;">mmcv&gt;=2.0.0, \&lt;2.1.0</td>
+<td style="text-align: center;">mmengine&gt;=0.7.1, \&lt;1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">3.0.0</td>
+<td style="text-align: center;">mmcv&gt;=2.0.0, \&lt;2.1.0</td>
+<td style="text-align: center;">mmengine&gt;=0.7.1, \&lt;1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">3.0.0rc6</td>
+<td style="text-align: center;">mmcv&gt;=2.0.0rc4, \&lt;2.1.0</td>
+<td style="text-align: center;">mmengine&gt;=0.6.0, \&lt;1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">3.0.0rc5</td>
+<td style="text-align: center;">mmcv&gt;=2.0.0rc1, \&lt;2.1.0</td>
+<td style="text-align: center;">mmengine&gt;=0.3.0, \&lt;1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">3.0.0rc4</td>
+<td style="text-align: center;">mmcv&gt;=2.0.0rc1, \&lt;2.1.0</td>
+<td style="text-align: center;">mmengine&gt;=0.3.0, \&lt;1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">3.0.0rc3</td>
+<td style="text-align: center;">mmcv&gt;=2.0.0rc1, \&lt;2.1.0</td>
+<td style="text-align: center;">mmengine&gt;=0.3.0, \&lt;1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">3.0.0rc2</td>
+<td style="text-align: center;">mmcv&gt;=2.0.0rc1, \&lt;2.1.0</td>
+<td style="text-align: center;">mmengine&gt;=0.1.0, \&lt;1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">3.0.0rc1</td>
+<td style="text-align: center;">mmcv&gt;=2.0.0rc1, \&lt;2.1.0</td>
+<td style="text-align: center;">mmengine&gt;=0.1.0, \&lt;1.0.0</td>
+</tr>
+<tr>
+<td style="text-align: center;">3.0.0rc0</td>
+<td style="text-align: center;">mmcv&gt;=2.0.0rc1, \&lt;2.1.0</td>
+<td style="text-align: center;">mmengine&gt;=0.1.0, \&lt;1.0.0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>注意：</strong></p>
+<ol>
+<li>如果你希望安装 mmdet-v2.x, MMDetection 和 MMCV 版本兼容表可以在 <a href="https://mmdetection.readthedocs.io/en/stable/faq.html#installation">这里</a> 找到，请选择合适的版本避免安装错误。</li>
+<li>
+<p>在 MMCV-v2.x 中，<code>mmcv-full</code> 改名为 <code>mmcv</code>，如果你想安装不包含 CUDA 算子的版本，可以选择安装 MMCV 精简版 <code>mmcv-lite</code>。</p>
+</li>
+<li>
+<p>"No module named 'mmcv.ops'"; "No module named 'mmcv._ext'".</p>
+</li>
+</ol>
+<p>原因是安装了 <code>mmcv-lite</code> 而不是 <code>mmcv</code>。</p>
+<ol>
+<li>
+<p><code>pip uninstall mmcv-lite</code> 卸载安装的 <code>mmcv-lite</code></p>
+</li>
+<li>
+<p>安装 <code>mmcv</code> 根据 <a href="https://mmcv.readthedocs.io/zh_CN/2.x/get_started/installation.html">安装说明</a>。</p>
+</li>
+<li>
+<p>在 Windows 环境下安装过程中遇到 "Microsoft Visual C++ 14.0 or graeter is required" error .</p>
+</li>
+</ol>
+<p>这个错误发生在 pycotools 的 'pycocotools._mask' 扩展构建过程，其原因是缺少了对应 C++ 环境依赖。你需要到微软官方下载<a href="https://visualstudio.microsoft.com/zh-hans/visual-cpp-build-tools/">对应工具</a>，选择“使用 C++ 的桌面开发”选项安装最小依赖，随后重新安装 pycocotools。</p>
+<ul>
+<li>使用 albumentations</li>
+</ul>
+<p>如果你希望使用 <code>albumentations</code>，我们建议使用 <code>pip install -r requirements/albu.txt</code>
+或者 <code>pip install -U albumentations --no-binary qudida,albumentations</code> 进行安装。
+如果简单地使用 <code>pip install albumentations&gt;=0.3.2</code> 进行安装，
+则会同时安装 <code>opencv-python-headless</code>（即便已经安装了 <code>opencv-python</code> 也会再次安装）。
+我们建议在安装 <code>albumentations</code> 后检查环境，以确保没有同时安装 <code>opencv-python</code> 和 <code>opencv-python-headless</code>，
+因为同时安装可能会导致一些问题。更多细节请参考<a href="https://albumentations.ai/docs/getting_started/installation/#note-on-opencv-dependencies">官方文档</a> 。</p>
+<ul>
+<li>在某些算法中出现 ModuleNotFoundError 错误</li>
+</ul>
+<p>一些算法或者数据需要额外的依赖，例如 Instaboost、 Panoptic Segmentation、 LVIS dataset 等。请注意错误信息并安装相应的包，例如：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 安装 instaboost 依赖</span>
+pip<span class="w"> </span>install<span class="w"> </span>instaboostfast
+<span class="c1"># 安装 panoptic segmentation 依赖</span>
+pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/cocodataset/panopticapi.git
+<span class="c1"># 安装 LVIS dataset 依赖</span>
+pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/lvis-dataset/lvis-api.git
+</code></pre></div>
+<h2 id="_3">代码<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>修改一些代码后是否需要重新安装 mmdet</li>
+</ul>
+<p>如果你遵循最佳实践，即使用 <code>pip install -v -e .</code> 安装的 mmdet，则对本地代码所作的任何修改都会生效，无需重新安装</p>
+<ul>
+<li>如何使用多个 MMDetection 版本进行开发</li>
+</ul>
+<p>你可以拥有多个文件夹，例如 mmdet-3.0，mmdet-3.1。</p>
+<p>要使环境中安装默认的 MMDetection 而不是当前正在在使用的，可以删除出现在相关脚本中的代码：</p>
+<div class="highlight"><pre><span></span><code><span class="nv">PYTHONPATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>dirname<span class="w"> </span><span class="nv">$0</span><span class="k">)</span><span class="s2">/..&quot;</span>:<span class="nv">$PYTHONPATH</span>
+</code></pre></div>
+<h2 id="pytorchcuda">PyTorch/CUDA 环境相关<a class="headerlink" href="#pytorchcuda" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>
+<p>"RTX 30 series card fails when building MMCV or MMDet"</p>
+</li>
+<li>
+<p>临时解决方案为使用命令 <code>MMCV_WITH_OPS=1 MMCV_CUDA_ARGS='-gencode=arch=compute_80,code=sm_80' pip install -e .</code> 进行编译。 常见报错信息为 <code>nvcc fatal : Unsupported gpu architecture 'compute_86'</code> 意思是你的编译器不支持 sm_86 架构(包括英伟达 30 系列的显卡)的优化，至 CUDA toolkit 11.0 依旧未支持. 这个命令是通过增加宏 <code>MMCV_CUDA_ARGS='-gencode=arch=compute_80,code=sm_80</code> 让 nvcc 编译器为英伟达 30 系列显卡进行 <code>sm_80</code> 的优化，虽然这有可能会无法发挥出显卡所有性能。</p>
+</li>
+<li>
+<p>有开发者已经在 <a href="https://github.com/pytorch/pytorch/pull/47585">pytorch/pytorch#47585</a> 更新了 PyTorch 默认的编译 flag， 但是我们对此并没有进行测试。</p>
+</li>
+<li>
+<p>"invalid device function" 或者 "no kernel image is available for execution".</p>
+</li>
+<li>
+<p>检查您正常安装了 CUDA runtime (一般在<code>/usr/local/</code>)，或者使用 <code>nvcc --version</code> 检查本地版本，有时安装 PyTorch 会顺带安装一个 CUDA runtime，并且实际优先使用 conda 环境中的版本，你可以使用 <code>conda list cudatoolkit</code> 查看其版本。</p>
+</li>
+<li>
+<p>编译 extension 的 CUDA Toolkit 版本与运行时的 CUDA Toolkit 版本是否相符，</p>
+<ul>
+<li>如果您从源码自己编译的，使用 <code>python mmdet/utils/collect_env.py</code> 检查编译编译 extension 的 CUDA Toolkit 版本，然后使用 <code>conda list cudatoolkit</code> 检查当前 conda 环境是否有 CUDA Toolkit，若有检查版本是否匹配， 如不匹配，更换 conda 环境的 CUDA Toolkit，或者使用匹配的 CUDA Toolkit 中的 nvcc 编译即可，如环境中无 CUDA Toolkit，可以使用 <code>nvcc -V</code>。</li>
+</ul>
+<p>等命令查看当前使用的 CUDA runtime。</p>
+<ul>
+<li>如果您是通过 pip 下载的预编译好的版本，请确保与当前 CUDA runtime 一致。</li>
+</ul>
+</li>
+<li>
+<p>运行 <code>python mmdet/utils/collect_env.py</code> 检查是否为正确的 GPU 架构编译的 PyTorch， torchvision， 与 MMCV。 你或许需要设置 <code>TORCH_CUDA_ARCH_LIST</code> 来重新安装 MMCV，可以参考 <a href="https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#gpu-feature-list">GPU 架构表</a>,
+     例如， 运行 <code>TORCH_CUDA_ARCH_LIST=7.0 pip install mmcv</code> 为 Volta GPU 编译 MMCV。这种架构不匹配的问题一般会出现在使用一些旧型号的 GPU 时候出现， 例如， Tesla K80。</p>
+</li>
+<li>
+<p>"undefined symbol" 或者 "cannot open xxx.so".</p>
+</li>
+<li>
+<p>如果这些 symbol 属于 CUDA/C++ (如 libcudart.so 或者 GLIBCXX)，使用 <code>python mmdet/utils/collect_env.py</code>检查 CUDA/GCC runtime 与编译 MMCV 的 CUDA 版本是否相同。</p>
+</li>
+<li>如果这些 symbols 属于 PyTorch，(例如, symbols containing caffe, aten, and TH), 检查当前 Pytorch 版本是否与编译 MMCV 的版本一致。</li>
+<li>
+<p>运行 <code>python mmdet/utils/collect_env.py</code> 检查 PyTorch， torchvision， MMCV 等的编译环境与运行环境一致。</p>
+</li>
+<li>
+<p>setuptools.sandbox.UnpickleableException: DistutilsSetupError("each element of 'ext_modules' option must be an Extension instance or 2-tuple")</p>
+</li>
+<li>
+<p>如果你在使用 miniconda 而不是 anaconda，检查是否正确的安装了 Cython 如 <a href="https://github.com/open-mmlab/mmdetection/issues/3379">#3379</a>.</p>
+</li>
+<li>
+<p>检查环境中的 <code>setuptools</code>, <code>Cython</code>, and <code>PyTorch</code> 相互之间版本是否匹配。</p>
+</li>
+<li>
+<p>"Segmentation fault".</p>
+</li>
+<li>
+<p>检查 GCC 的版本，通常是因为 PyTorch 版本与 GCC 版本不匹配 （例如 GCC \&lt; 4.9 )，我们推荐用户使用 GCC 5.4，我们也不推荐使用 GCC 5.5， 因为有反馈 GCC 5.5 会导致 "segmentation fault" 并且切换到 GCC 5.4 就可以解决问题。</p>
+</li>
+<li>
+<p>检查是否正确安装了 CUDA 版本的 PyTorch 。</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;import torch; print(torch.cuda.is_available())&#39;</span>
+</code></pre></div>
+<p>是否返回True。</p>
+</li>
+<li>
+<p>如果 <code>torch</code> 的安装是正确的，检查是否正确编译了 MMCV。</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;import mmcv; import mmcv.ops&#39;</span>
+</code></pre></div>
+</li>
+<li>
+<p>如果 MMCV 与 PyTorch 都被正确安装了，则使用 <code>ipdb</code>, <code>pdb</code> 设置断点，直接查找哪一部分的代码导致了 <code>segmentation fault</code>。</p>
+</li>
+</ul>
+<h2 id="training">Training 相关<a class="headerlink" href="#training" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>
+<p>"Loss goes Nan"</p>
+</li>
+<li>
+<p>检查数据的标注是否正常， 长或宽为 0 的框可能会导致回归 loss 变为 nan，一些小尺寸（宽度或高度小于 1）的框在数据增强（例如，instaboost）后也会导致此问题。 因此，可以检查标注并过滤掉那些特别小甚至面积为 0 的框，并关闭一些可能会导致 0 面积框出现数据增强。</p>
+</li>
+<li>降低学习率：由于某些原因，例如 batch size 大小的变化， 导致当前学习率可能太大。 您可以降低为可以稳定训练模型的值。</li>
+<li>延长 warm up 的时间：一些模型在训练初始时对学习率很敏感，您可以把 <code>warmup_iters</code> 从 500 更改为 1000 或 2000。</li>
+<li>
+<p>添加 gradient clipping: 一些模型需要梯度裁剪来稳定训练过程。 默认的 <code>grad_clip</code> 是 <code>None</code>,  你可以在 config 设置 <code>optimizer_config=dict(_delete_=True, grad_clip=dict(max_norm=35, norm_type=2))</code>  如果你的 config 没有继承任何包含 <code>optimizer_config=dict(grad_clip=None)</code>,  你可以直接设置<code>optimizer_config=dict(grad_clip=dict(max_norm=35, norm_type=2))</code>.</p>
+</li>
+<li>
+<p>"GPU out of memory"</p>
+</li>
+<li>
+<p>存在大量 ground truth boxes 或者大量 anchor 的场景，可能在 assigner 会 OOM。 您可以在 assigner 的配置中设置 <code>gpu_assign_thr=N</code>，这样当超过 N 个 GT boxes 时，assigner 会通过 CPU 计算 IOU。</p>
+</li>
+<li>
+<p>在 backbone 中设置 <code>with_cp=True</code>。 这使用 PyTorch 中的 <code>sublinear strategy</code> 来降低 backbone 占用的 GPU 显存。</p>
+</li>
+<li>
+<p>使用 <code>config/fp16</code> 中的示例尝试混合精度训练。<code>loss_scale</code> 可能需要针对不同模型进行调整。</p>
+</li>
+<li>
+<p>你也可以尝试使用 <code>AvoidCUDAOOM</code> 来避免该问题。首先它将尝试调用 <code>torch.cuda.empty_cache()</code>。如果失败，将会尝试把输入类型转换到 FP16。如果仍然失败，将会把输入从 GPUs 转换到 CPUs 进行计算。这里提供了两个使用的例子：</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">mmdet.utils</span> <span class="kn">import</span> <span class="n">AvoidCUDAOOM</span>
+
+<span class="n">output</span> <span class="o">=</span> <span class="n">AvoidCUDAOOM</span><span class="o">.</span><span class="n">retry_if_cuda_oom</span><span class="p">(</span><span class="n">some_function</span><span class="p">)(</span><span class="n">input1</span><span class="p">,</span> <span class="n">input2</span><span class="p">)</span>
+</code></pre></div>
+<p>你也可也使用 <code>AvoidCUDAOOM</code> 作为装饰器让代码遇到 OOM 的时候继续运行：</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">mmdet.utils</span> <span class="kn">import</span> <span class="n">AvoidCUDAOOM</span>
+
+<span class="nd">@AvoidCUDAOOM</span><span class="o">.</span><span class="n">retry_if_cuda_oom</span>
+<span class="k">def</span> <span class="nf">function</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="o">...</span>
+    <span class="k">return</span> <span class="n">xxx</span>
+</code></pre></div>
+</li>
+<li>
+<p>"RuntimeError: Expected to have finished reduction in the prior iteration before starting a new one"</p>
+</li>
+<li>
+<p>这个错误出现在存在参数没有在 forward 中使用，容易在 DDP 中运行不同分支时发生。</p>
+</li>
+<li>你可以在 config 设置 <code>find_unused_parameters = True</code> 进行训练 (会降低训练速度)。</li>
+<li>
+<p>你也可以通过在 config 中的 <code>optimizer_config</code> 里设置 <code>detect_anomalous_params=True</code> 查找哪些参数没有用到，但是需要 MMCV 的版本 &gt;= 1.4.1。</p>
+</li>
+<li>
+<p>训练中保存最好模型</p>
+</li>
+</ul>
+<p>可以通过配置 <code>default_hooks = dict(checkpoint=dict(type='CheckpointHook', interval=1, save_best='auto')</code>开启。在 <code>auto</code> 参数情况下会根据返回的验证结果中的第一个 key 作为选择最优模型的依据，你也可以直接设置评估结果中的 key 来手动设置，例如 <code>save_best='coco/bbox_mAP'</code>。</p>
+<ul>
+<li>在 Resume 训练中使用 <code>ExpMomentumEMAHook</code></li>
+</ul>
+<p>如果在训练中使用了 <code>ExpMomentumEMAHook</code>，那么 resume 时候不能仅仅通过命令行参数 <code>--resume-from</code> 或 <code>--cfg-options resume_from</code> 实现恢复模型参数功能例如 <code>python tools/train.py configs/yolox/yolox_s_8x8_300e_coco.py --resume-from ./work_dir/yolox_s_8x8_300e_coco/epoch_x.pth</code>。以 <code>yolox_s</code> 算法为例，由于 <code>ExpMomentumEMAHook</code> 需要重新加载权重，你可以通过如下做法实现：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 直接打开 configs/yolox/yolox_s_8x8_300e_coco.py 修改所有 resume_from 字段</span>
+<span class="n">resume_from</span><span class="o">=./</span><span class="n">work_dir</span><span class="o">/</span><span class="n">yolox_s_8x8_300e_coco</span><span class="o">/</span><span class="n">epoch_x</span><span class="o">.</span><span class="n">pth</span>
+<span class="n">custom_hooks</span><span class="o">=</span><span class="p">[</span><span class="o">...</span>
+    <span class="nb">dict</span><span class="p">(</span>
+        <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;ExpMomentumEMAHook&#39;</span><span class="p">,</span>
+        <span class="n">resume_from</span><span class="o">=./</span><span class="n">work_dir</span><span class="o">/</span><span class="n">yolox_s_8x8_300e_coco</span><span class="o">/</span><span class="n">epoch_x</span><span class="o">.</span><span class="n">pth</span><span class="p">,</span>
+        <span class="n">momentum</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">,</span>
+        <span class="n">priority</span><span class="o">=</span><span class="mi">49</span><span class="p">)</span>
+    <span class="p">]</span>
+</code></pre></div>
+<h2 id="evaluation">Evaluation 相关<a class="headerlink" href="#evaluation" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>使用 COCO Dataset 的测评接口时, 测评结果中 AP 或者 AR = -1</li>
+<li>根据COCO数据集的定义，一张图像中的中等物体与小物体面积的阈值分别为 9216（96*96）与 1024（32*32）。</li>
+<li>如果在某个区间没有检测框 AP 与 AR 认定为 -1.</li>
+</ul>
+<h2 id="model">Model 相关<a class="headerlink" href="#model" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li><strong>ResNet style 参数说明</strong></li>
+</ul>
+<p>ResNet style 可选参数允许 <code>pytorch</code> 和 <code>caffe</code>，其差别在于 Bottleneck 模块。Bottleneck 是 <code>1x1-3x3-1x1</code> 堆叠结构，在 <code>caffe</code> 模式模式下 stride=2 参数放置在第一个 <code>1x1</code> 卷积处，而 <code>pyorch</code> 模式下 stride=2 放在第二个 <code>3x3</code> 卷积处。一个简单示例如下：</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">style</span> <span class="o">==</span> <span class="s1">&#39;pytorch&#39;</span><span class="p">:</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">conv1_stride</span> <span class="o">=</span> <span class="mi">1</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">conv2_stride</span> <span class="o">=</span> <span class="n">stride</span>
+<span class="k">else</span><span class="p">:</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">conv1_stride</span> <span class="o">=</span> <span class="n">stride</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">conv2_stride</span> <span class="o">=</span> <span class="mi">1</span>
+</code></pre></div>
+<ul>
+<li><strong>ResNeXt 参数说明</strong></li>
+</ul>
+<p>ResNeXt 来自论文 <a href="https://arxiv.org/abs/1611.05431"><code>Aggregated Residual Transformations for Deep Neural Networks</code></a>. 其引入分组卷积，并且通过变量基数来控制组的数量达到精度和复杂度的平衡，其有两个超参 <code>baseWidth</code> 和 <code>cardinality</code>来控制内部 Bottleneck 模块的基本宽度和分组数参数。以 MMDetection 中配置名为 <code>mask_rcnn_x101_64x4d_fpn_mstrain-poly_3x_coco.py</code> 为例，其中 <code>mask_rcnn</code> 代表算法采用 Mask R-CNN，<code>x101</code> 代表骨架网络采用 ResNeXt-101，<code>64x4d</code>代表 Bottleneck 一共分成 64 组，每组的基本宽度是 4。</p>
+<ul>
+<li><strong>骨架网络 eval 模式说明</strong></li>
+</ul>
+<p>因为检测模型通常比较大且输入图片分辨率很高，这会导致检测模型的 batch 很小，通常是 2，这会使得 BatchNorm 在训练过程计算的统计量方差非常大，不如主干网络预训练时得到的统计量稳定，因此在训练是一般都会使用 <code>norm_eval=True</code> 模式，直接使用预训练主干网络中的 BatchNorm 统计量，少数使用大 batch 的算法是 <code>norm_eval=False</code> 模式，例如 NASFPN。对于没有 ImageNet 预训练的骨架网络，如果 batch 比较小，可以考虑使用 <code>SyncBN</code>。</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      最后更新:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 27, 2023</span>
+      
+        <br>
+        创建日期:
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 27, 2023</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../compatibility/" class="md-footer__link md-footer__link--prev" aria-label="上一页: MMDetection v2.x 兼容性说明">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                MMDetection v2.x 兼容性说明
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../projects/" class="md-footer__link md-footer__link--next" aria-label="下一页: 基于 MMDetection 的项目">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                基于 MMDetection 的项目
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Ean Yang
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/YQisme" target="_blank" rel="noopener" title="github主页" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://space.bilibili.com/244185393?spm_id_from=333.788.0.0" target="_blank" rel="noopener" title="b站主页" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M488.6 104.1c16.7 18.1 24.4 39.7 23.3 65.7v202.4c-.4 26.4-9.2 48.1-26.5 65.1-17.2 17-39.1 25.9-65.5 26.7H92.02c-26.45-.8-48.21-9.8-65.28-27.2C9.682 419.4.767 396.5 0 368.2V169.8c.767-26 9.682-47.6 26.74-65.7C43.81 87.75 65.57 78.77 92.02 78h29.38L96.05 52.19c-5.75-5.73-8.63-13-8.63-21.79 0-8.8 2.88-16.06 8.63-21.797C101.8 2.868 109.1 0 117.9 0s16.1 2.868 21.9 8.603L213.1 78h88l74.5-69.397C381.7 2.868 389.2 0 398 0c8.8 0 16.1 2.868 21.9 8.603 5.7 5.737 8.6 12.997 8.6 21.797 0 8.79-2.9 16.06-8.6 21.79L394.6 78h29.3c26.4.77 48 9.75 64.7 26.1zm-38.8 69.7c-.4-9.6-3.7-17.4-10.7-23.5-5.2-6.1-14-9.4-22.7-9.8H96.05c-9.59.4-17.45 3.7-23.58 9.8-6.14 6.1-9.4 13.9-9.78 23.5v194.4c0 9.2 3.26 17 9.78 23.5s14.38 9.8 23.58 9.8H416.4c9.2 0 17-3.3 23.3-9.8 6.3-6.5 9.7-14.3 10.1-23.5V173.8zm-264.3 42.7c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.2 6.3-14 9.5-23.6 9.5-9.6 0-17.5-3.2-23.6-9.5-6.1-6.3-9.4-14-9.8-23.2v-33.3c.4-9.1 3.8-16.9 10.1-23.2 6.3-6.3 13.2-9.6 23.3-10 9.2.4 17 3.7 23.3 10zm191.5 0c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.1 6.3-14 9.5-23.6 9.5-9.6 0-17.4-3.2-23.6-9.5-7-6.3-9.4-14-9.7-23.2v-33.3c.3-9.1 3.7-16.9 10-23.2 6.3-6.3 14.1-9.6 23.3-10 9.2.4 17 3.7 23.3 10z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://eanyang7.com" target="_blank" rel="noopener" title="个人主页" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1-96 0zm40 304v128c0 17.7-14.3 32-32 32s-32-14.3-32-32V256.9l-28.6 47.6c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6h29.7c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V352h-16z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.prune", "navigation.top", "toc.follow", "header.autohide", "navigation.footer", "search.suggest", "search.highlight", "search.share", "content.action.edit", "content.action.view", "content.code.copy"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.cd18aaf1.min.js"></script>
+      
+    
+  </body>
+</html>
